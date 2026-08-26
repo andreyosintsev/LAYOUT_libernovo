@@ -1,0 +1,28 @@
+/*Montserrat Light*/
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    src: url("../../fonts/Montserrat-Light.otf") format("opentype");
+    font-display: swap;
+}
+/*Montserrat Medium*/
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: url("../../fonts/Montserrat-Medium.otf") format("opentype");
+    font-display: swap;
+}
+/*HelveticaNeueCyr Roman*/
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 300;
+    src: url("../../fonts/HelveticaNeueCyr-Roman.ttf") format("truetype");
+    font-display: swap;
+}
+/*HelveticaNeueCyr Medium*/
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 400;
+    src: url("../../fonts/HelveticaNeueCyr-Medium.ttf") format("truetype");
+    font-display: swap;
+}
