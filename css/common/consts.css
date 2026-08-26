@@ -7,10 +7,11 @@
 */
 
     --max-content-width:        1920px;
-    --header-width:             1600px;
+    --header-width:             1760px;
     --wrapper-width:            1440px;
-    --content-width:            1230px;
+    --content-width:            1280px;
     --tech-table-width:         1200px;
+    --mobile-max-width:         1152px;
 
 
 /*
