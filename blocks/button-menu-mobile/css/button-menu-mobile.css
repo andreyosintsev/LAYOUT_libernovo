@@ -39,7 +39,7 @@
     transform-origin: 15% 66%;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1120px) {
     .button-menu-mobile {
         display: block;
         margin-left: 66px;
