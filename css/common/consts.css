@@ -59,9 +59,9 @@
     --text-color-menu:          var(--gray);
     --text-color-title-table:   var(--gray-darker);
 
-    --text-family-main:         Montserrat, arial, sans-serif;
+    --text-family-main:         'HelveticaNeueCyr', arial, sans-serif;
     --text-family-menu:         Montserrat, arial, sans-serif;
-    --text-family-title:        'Barlow Condensed', arial, sans-serif;
+    --text-family-title:        'HelveticaNeueCyr', arial, sans-serif;
     --text-family-section-title: "Roboto", Helvetica, Arial, sans-serif;
 
     --text-size-section:        42px;
@@ -143,4 +143,9 @@
     --button-rounded-background-color:         var(--black);
     --button-rounded-background-color_hover:   var(--black);
     --button-rounded-border-color:             var(--black);
+
+    --button-buy-background-color:             var(--orange);
+    --button-buy-border-color:                 var(--orange);
+    --button-buy-background-color_hover:       var(--orange-light);
+    --button-buy-border-color_hover:           var(--orange-light);
 }

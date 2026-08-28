@@ -1,0 +1,44 @@
+.video {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: var(--wrapper-width, 1440px);
+    height: auto;
+
+    border-radius: var(--border-radius-hero-video, 20px);
+
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+.not-visible {
+    opacity: 0;
+}
+
+.video__player {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.video__playbutton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 40px;
+    height: 40px;
+
+    background-color: transparent;
+
+    background-image: url("../images/playbutton.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+
+    transition: opacity 0.2s ease;
+
+    pointer-events: none;
+}
