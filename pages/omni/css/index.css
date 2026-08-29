@@ -20,6 +20,16 @@ body {
 
     background-color: #F1F1F1;
 }
+.segment {
+    width: 100%;
+    padding-top: 150px;
+
+    background-color: var(--white, #FFFFFF);
+}
+
+.segment_gray {
+    background-color: #F1F1F1;
+}
 
 .hidden {
     display: none !important;
@@ -34,7 +44,7 @@ body {
 }
 
 .main__wrapper {
-    margin: 0 auto 60px;
+    margin: 0 auto;
 
     color: var(--text-color-main, #000000);
 
@@ -109,9 +119,6 @@ body {
 }
 
 @media screen and (max-width: 1440px) {
-    .section {
-        margin-top: 100px;
-    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -123,5 +130,9 @@ body {
 @media screen and (max-width: 970px) {
     .hero-single {
         margin-top: 0;
+    }
+
+    .segment {
+        padding-top: 100px;
     }
 }
