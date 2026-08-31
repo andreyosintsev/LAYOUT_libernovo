@@ -12,6 +12,13 @@
     src: url("../../fonts/Montserrat-Medium.otf") format("opentype");
     font-display: swap;
 }
+/*HelveticaNeueCyr Light*/
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 200;
+    src: url("../../fonts/HelveticaNeueCyr-Light.ttf") format("truetype");
+    font-display: swap;
+}
 /*HelveticaNeueCyr Roman*/
 @font-face {
     font-family: 'HelveticaNeueCyr';
