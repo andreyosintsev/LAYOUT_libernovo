@@ -1,0 +1,39 @@
+.tab-dynamic {
+    font-family: var(--text-family-main, sans-serif);
+    font-weight: var(--text-weight-main, 300);
+
+    line-height: 1.3;
+}
+
+.tab-dynamic__title  {
+    margin: 0 0 30px;
+
+    font-size: 50px;
+    font-weight: var(--text-weight-main, 300);
+
+    line-height: 1;
+
+    text-align: center;
+}
+
+.tab-dynamic__subtitle {
+    margin: 0 0 78px 0;
+
+    font-size: 20px;
+    font-weight: var(--text-weight-main, 300);
+
+    line-height: 1.1;
+    text-align: center;
+}
+
+@media screen and (max-width: 1152px)  {
+    .tab-dynamic__title  {
+        font-size: 42px;
+    }
+
+    .tab-dynamic__subtitle {
+        font-size: 18px;
+    }
+}
+
+

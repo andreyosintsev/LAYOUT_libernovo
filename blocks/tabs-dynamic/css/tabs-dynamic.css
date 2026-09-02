@@ -11,7 +11,7 @@
     grid-auto-columns: max-content;
     width: fit-content;
     max-width: 100%;
-    margin: 0 auto 150px;
+    margin: 0 auto 120px;
 
     color: var(--gray-medium, #B7B7B7);
     font-size: var(--text-size-legend, 18px);
@@ -54,10 +54,6 @@
     color: var(--orange, #F76500);
 }
 
-.tabs-dynamic__menu-item-progress {
-
-}
-
 .tabs-dynamic__menu-item:hover {
     color: var(--orange, #F76500);
 }
@@ -82,6 +78,8 @@
 
 @media screen and (max-width: 768px) {
     .tabs-dynamic__menu {
+        margin: 0 auto 100px;
+
         font-size: var(--text-size-legend_mobile, 16px);
     }
 

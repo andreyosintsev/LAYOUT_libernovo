@@ -1,0 +1,100 @@
+.tab-dynamic_omnistretch .grid-images {
+    gap: 32px;
+}
+
+.tab-dynamic_omnistretch .grid-images__block {
+    display: grid;
+    grid-template-areas: none;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
+    gap: 0 24px;
+}
+
+.tab-dynamic_omnistretch .grid-images__cell {
+    display: relative;
+}
+
+.tab-dynamic_omnistretch .grid-images__cell_tobottom  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.tab-dynamic_omnistretch .grid-images__row {
+    grid-template-areas: none;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 0 24px;
+}
+
+.tab-dynamic_omnistretch .grid-images__text {
+    position: relative;
+    left: auto;
+    top: auto;
+    max-width: 420px;
+
+    color: #878b8f;
+    font-size: 22px;
+}
+
+.tab-dynamic_omnistretch .grid-images__text_absolute {
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    max-width: 420px;
+
+    color: #878b8f;
+    font-size: 22px;
+}
+
+.tab-dynamic_omnistretch .grid-images__text_strong {
+    color: var(--black);
+}
+
+.tab-dynamic_omnistretch .grid-images__video {
+    margin-bottom: 40px;
+
+    border-radius: var(--border-radius-hero-video, 20px);
+
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1152px)  {
+    .tab-dynamic_omnistretch .grid-images__row {
+        display: grid;
+    }
+
+    .tab-dynamic_omnistretch .grid-images__text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    .tab-dynamic_omnistretch .grid-images__block {
+        display: block;
+    }
+
+    .tab-dynamic_omnistretch .grid-images__row {
+        display: block;
+    }
+
+    .tab-dynamic_omnistretch .grid-images__text_absolute {
+        position: relative;
+        right: auto;
+        top: auto;
+        padding-top: 50px;
+        margin-bottom: 40px;
+
+        max-width: 100%;
+    }
+
+    .tab-dynamic_omnistretch .grid-images__image_sizeplus {
+        width: 130%;
+    }
+}
+
+@media screen and (max-width: 576px)  {
+    .tab-dynamic_omnistretch .tab-dynamic__title  {
+        font-size: 36px;
+    }
+}

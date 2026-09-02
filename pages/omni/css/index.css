@@ -79,6 +79,7 @@ body {
 
 .section {
     margin-bottom: 75px;
+    padding: 0 24px;
 
     scroll-margin-top: 80px;
 }

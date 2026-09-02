@@ -10,16 +10,11 @@
 </head>
 <body style="background-color: lime;">
     <div class="video">
-        <video class="video__player"
-            poster="images/preview/video.png"
-            playsinline>
-            <source src="video/video.mp4" type="video/mp4">
-            <source src="video/video.webm" type="video/webm">
+        <video class="video__player" controls autoplay playsinline muted loop>
+            <source src="../../video/video.mp4" type="video/mp4">
+            <source src="../../video/video.webm" type="video/webm">
             Ваш браузер не поддерживает видео
         </video>
-        <div class="video__playbutton"></div>
     </div>
-
-    <script src="scripts/video.js"></script>
 </body>
 </html>
