@@ -59,10 +59,10 @@
     --text-color-menu:          var(--gray);
     --text-color-title-table:   var(--gray-darker);
 
-    --text-family-main:         'HelveticaNeueCyr', arial, sans-serif;
+    --text-family-main:         'HelveticaNeueCyr', Helvetica, Arial, sans-serif;
     --text-family-menu:         Montserrat, arial, sans-serif;
-    --text-family-title:        'HelveticaNeueCyr', arial, sans-serif;
-    --text-family-section-title: "Roboto", Helvetica, Arial, sans-serif;
+    --text-family-title:        'HelveticaNeueCyr', Helvetica, Arial, sans-serif;
+    --text-family-section-title: 'HelveticaNeueCyr', Helvetica, Arial, sans-serif;
 
     --text-size-section:        42px;
     --text-size-card:           28px;

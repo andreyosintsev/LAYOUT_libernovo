@@ -1,6 +1,6 @@
 .tab-dynamic {
     font-family: var(--text-family-main, sans-serif);
-    font-weight: var(--text-weight-main, 300);
+    font-weight: var(--text-weight-semibold, 400);
 
     line-height: 1.3;
 }
