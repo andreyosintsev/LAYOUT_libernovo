@@ -13,6 +13,12 @@
     text-align: left !important;
 }
 
+.section-title_diminished {
+    margin-bottom: 24px;
+
+    font-size: 24px;
+}
+
 .section-title__subtitle {
     max-width: 852px;
     margin: 16px auto 8px;
