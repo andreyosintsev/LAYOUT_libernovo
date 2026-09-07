@@ -1,0 +1,52 @@
+.card-review {
+    margin: 0;
+    padding: 24px;
+
+    font-family: var(--text-family-main, sans-serif);
+    font-size: 14px;
+    font-weight: var(--text-weight-main, 300);
+
+    background-color: rgb(241, 243, 246);
+    border-radius: 16px;
+
+    overflow: hidden;
+}
+
+.card-review__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+
+    border-radius: 16px;
+}
+
+.card-review__text {
+    margin-bottom: 24px;
+}
+
+.card-review__author {
+    font-size: var(--text-size-product, 16px);
+}
+
+.block-image__image_blank {
+    display: block;
+}
+
+.block-image__image_blank-larger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .card-review {
+        padding: 20px;
+    }
+
+    .card-review__image {
+        margin-bottom: 20px;
+    }
+
+    .card-review__text {
+       margin-bottom: 20px;
+    }
+}

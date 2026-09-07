@@ -8,6 +8,13 @@
     background-color: var(--white, #FFFFFF);
 }
 
+.wrapper-2580 {
+    width: 100%;
+    max-width: 2580px;
+    margin: 0 auto;
+    padding: 0;
+}
+
 .wrapper-1600 {
     width: 100%;
     max-width: var(--header-width, 1600px);
