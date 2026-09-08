@@ -9,6 +9,10 @@
     overflow: hidden;
 }
 
+.block-image_no-round {
+    border-radius: 0;
+}
+
 .block-image__image {
     display: block;
     width: 100%;

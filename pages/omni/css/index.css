@@ -78,7 +78,7 @@ body {
 }
 
 .section {
-    padding: 150px 24px 0;
+    padding: 150px 0 0;
 
     scroll-margin-top: 80px;
 }
@@ -153,6 +153,10 @@ body {
     margin-top: 20px;
 }
 
+.section_choose .section-title  {
+    margin-bottom: 24px;
+}
+
 @media screen and (max-width: 1600px) {
     .main {
         padding-top: 70px;
@@ -163,6 +167,11 @@ body {
 }
 
 @media screen and (max-width: 1280px) {
+    .section {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
     .flex-images_premium {
        padding-top: 60px;
     }
