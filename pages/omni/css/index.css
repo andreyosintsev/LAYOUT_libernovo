@@ -149,6 +149,10 @@ body {
     padding-top: 16px;
 }
 
+.reviews {
+    margin-top: 20px;
+}
+
 @media screen and (max-width: 1600px) {
     .main {
         padding-top: 70px;
