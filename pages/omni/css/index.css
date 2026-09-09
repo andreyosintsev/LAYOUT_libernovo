@@ -157,6 +157,10 @@ body {
     margin-bottom: 24px;
 }
 
+.section_specifications .section-title {
+    margin-bottom: 80px;
+}
+
 @media screen and (max-width: 1600px) {
     .main {
         padding-top: 70px;
