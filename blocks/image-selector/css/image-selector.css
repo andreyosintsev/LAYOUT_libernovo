@@ -1,4 +1,8 @@
-.tabs-images {
+.image-selector {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    width: 100%;
+    height: 760px;
     max-width: 1280px;
 
     font-family: var(--text-family-main, sans-serif);
@@ -6,88 +10,177 @@
     font-weight: var(--text-weight-main, 300);
 }
 
-.tabs-images__content {
+.image-selector__content,
+.image-selector__pages {
     display: grid;
-
-    margin-bottom: 48px;
 }
 
-.tabs-images__image {
-    grid-area: 1/1;
-
-    width: 100%;
-    height: auto;
-
-    border-radius: 24px;
-
+.image-selector__image,
+.image-selector__page {
+    grid-area: 1 / 1;
     opacity: 0;
-
-    transition: opacity ease-in-out 0.3s;
 }
 
-.tabs-images__image_active {
+.image-selector__image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-selector__image_active,
+.image-selector__page_active {
     opacity: 1;
 }
 
-.tabs-images__menu {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: max-content;
+.image-selector__description {
+    position: relative;
+    margin-left: -32px;
+    padding: 48px;
 
-    width: 100%;
-    max-width: 1056px;
-    margin: 0 auto;
+    background-color: #E3E4E8;
+    border-radius: 24px;
 
-    background-color: var(--white, #FFFFFF);
-    border-radius: 26px;
-
-    overflow-x: auto;
-    overflow-y: hidden;
-
-    scrollbar-width: none;
-
-    -webkit-overflow-scrolling: touch;
-    touch-action: pan-x;
+    z-index: 1;
 }
 
-.tabs-images__menu::-webkit-scrollbar {
-    display: none;
+.image-selector__page {
+    color: #83766E;
+
+    pointer-events: none;
+
+    transition: opacity 0.3s ease-in-out;
 }
 
-.tabs-images__menu-item {
-    padding: 17px;
+.image-selector__page_active {
+    pointer-events: auto;
+}
 
-    border-radius: 26px;
+.image-selector__title {
+    margin-bottom: 64px;
+
+    font-size: 20px;
+    font-weight: var(--text-weight-semibold, 400);
+}
+
+.image-selector__subtitle {
+    margin-bottom: 24px;
+
+    color: #000000;
+}
+
+.image-selector__pos {
+    display: flex;
+    align-items: flex-end;
+
+    padding-top: 24px;
+    margin-bottom: 24px;
+
+    border-top: 1px solid var(--gray, #656565);
+}
+
+.image-selector__value {
+    padding-right: 16px;
+
+    font-size: 56px;
+    font-weight: var(--text-weight-semibold, 400);
 
     white-space: nowrap;
+}
 
-    user-select: none;
-    -webkit-user-select: none;
-    -webkit-tap-highlight-color: transparent;
+.image-selector__key {
+    font-size: 16px;
+}
 
+.image-selector__controls {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 0 36px 36px;
+}
+
+.image-selector__button {
     cursor: pointer;
 }
 
-.tabs-images__menu-item_active {
-    color: var(--white, #FFFFFF);
+.image-selector__button:first-child {
+    margin-right: 24px;
+}
 
-    background-color: var(--orange, #F76500);
+@media screen and (max-width: 1280px) {
+    .image-selector__value {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .image-selector__description {
+        margin-left: -60px;
+    }
+
+    .image-selector__title {
+        margin-bottom: 48px;
+
+        font-size: 18px;
+    }
+
+    .image-selector__pos {
+        padding-top: 21px;
+        margin-bottom: 21px;
+    }
+
+    .image-selector__value {
+        font-size: 42px;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .tabs-images {
-        font-size: 14px;
+    .image-selector {
+        display: block;
+
+        height: auto
     }
 
-    .tabs-images__content {
-        margin-bottom: 34px;
+    .image-selector__description {
+        margin-top: -32px;
+        margin-left: 0;
+        padding: 24px 24px 48px;
     }
 
-    .tabs-images__menu {
-        border-radius: 24px;
+    .image-selector__subtitle {
+        margin-bottom: 21px;
     }
 
-    .tabs-images__menu-item {
-        border-radius: 24px;
+    .image-selector__page {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .image-selector__specs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .image-selector__pos {
+        margin-right: 20px;
+    }
+
+    .image-selector__value {
+        font-size: 36px;
+    }
+
+    .image-selector__controls {
+        padding: 0 20px 20px;
     }
 }

@@ -80,7 +80,7 @@ body {
 .section {
     padding: 150px 0 0;
 
-    scroll-margin-top: 80px;
+    scroll-margin-top: -30px;
 }
 
 .section-title-page {
@@ -161,6 +161,10 @@ body {
     margin-bottom: 80px;
 }
 
+.section_durability  .section-title {
+    margin-bottom: 50px;
+}
+
 @media screen and (max-width: 1600px) {
     .main {
         padding-top: 70px;
@@ -174,6 +178,8 @@ body {
     .section {
         padding-left: 24px;
         padding-right: 24px;
+
+        scroll-margin-top: -50px;
     }
 
     .flex-images_premium {
@@ -212,6 +218,8 @@ body {
 
     .section {
         padding-top: 60px;
+
+        scroll-margin-top: 30px;
     }
 
     .tabs-images {

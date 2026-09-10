@@ -4,37 +4,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabs Images Block</title>
+    <title>Image Selector Block</title>
     <link rel="stylesheet" href="../../css/common/normalize.css">
     <link rel="stylesheet" href="../../css/common/consts.css">
-    <link rel="stylesheet" href="css/tabs-images.css">
+    <link rel="stylesheet" href="css/image-selector.css">
 </head>
 
 <body style="background-color: #aaaaaa; padding: 10px;">
-    <div class="tabs-images">
-        <div class="tabs-images__content">
-            <img class="tabs-images__image tabs-images__image_active" src="images/01.webp"
+    <div class="image-selector">
+        <div class="image-selector__content">
+            <img class="image-selector__image image-selector__image_active" src="images/01.webp"
                 alt="4D-регулировка подлокотников">
-            <img class="tabs-images__image" src="images/02.webp" alt="3D-регулировка подголовника">
-            <img class="tabs-images__image" src="images/03.webp" alt="Бионическая регулировка спинки">
-            <img class="tabs-images__image" src="images/04.webp" alt="Мягка поддержка сиденья">
+            <img class="image-selector__image" src="images/02.webp" alt="3D-регулировка подголовника">
+            <img class="image-selector__image" src="images/03.webp" alt="Бионическая регулировка спинки">
+            <img class="image-selector__image" src="images/04.webp" alt="Мягка поддержка сиденья">
         </div>
-        <div class="tabs-images__menu">
-            <div class="tabs-images__menu-item tabs-images__menu-item_active">
-                4D-регулировка подлокотников
+        <div class="image-selector__description">
+            <div class="image-selector__title">
+                Rigorously tested to meet BIFMA standards, the Omni has undergone extensive simulations to ensure
+                long-term durability and performance.
             </div>
-            <div class="tabs-images__menu-item">
-                3D-регулировка подголовника
+            <div class="image-selector__pages">
+                <div class="image-selector__page image-selector__page_active">
+                    <div class="image-selector__text">
+                        <div class="image-selector__subtitle">
+                            Долговечная спинка
+                        </div>
+                        <div class="image-selector__specs">
+                            <div class="image-selector__pos">
+                                <div class="image-selector__value">110 кг</div>
+                                <div class="image-selector__key">МАКС.<br>ВЕС</div>
+                            </div>
+                            <div class="image-selector__pos">
+                                <div class="image-selector__value">445 Н</div>
+                                <div class="image-selector__key">УПРУГОСТЬ<br>СПИНКИ</div>
+                            </div>
+                            <div class="image-selector__pos">
+                                <div class="image-selector__value">120 000</div>
+                                <div class="image-selector__key">ЦИКЛОВ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-selector__page">
+                    <div class="image-selector__text">
+                        <div class="image-selector__subtitle">
+                            Прочное сиденье
+                        </div>
+                        <div class="image-selector__specs">
+                            <div class="image-selector__pos">
+                                <div class="image-selector__value">57 кг</div>
+                                <div class="image-selector__key">ГРУЗ</div>
+                            </div>
+                            <div class="image-selector__pos">
+                                <div class="image-selector__value">3,5 см</div>
+                                <div class="image-selector__key">ВЫСОТА<br>ПАДЕНИЯ</div>
+                            </div>
+                            <div class="image-selector__pos">
+                                <div class="image-selector__value">100 000</div>
+                                <div class="image-selector__key">ЦИКЛОВ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-selector__page">
+                    <div class="image-selector__text">
+                        <div class="image-selector__subtitle">
+                            Долговечные подлокотники
+                        </div>
+                        <div class="image-selector__specs">
+                            <div class="image-selector__pos">
+                                <div class="image-selector__value">400 Н</div>
+                                <div class="image-selector__key">НАГРУЗКА</div>
+                            </div>
+                            <div class="image-selector__pos">
+                                <div class="image-selector__value">60 000</div>
+                                <div class="image-selector__key">ЦИКЛОВ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-selector__page">
+                    <div class="image-selector__text">
+                        <div class="image-selector__subtitle">
+                            Долговечные крестовина и ролики
+                        </div>
+                        <div class="image-selector__specs">
+                            <div class="image-selector__pos">
+                                <div class="image-selector__value">122 кг</div>
+                                <div class="image-selector__key">ВЕС</div>
+                            </div>
+                            <div class="image-selector__pos">
+                                <div class="image-selector__value">76 см</div>
+                                <div class="image-selector__key">РАССТОЯНИЕ</div>
+                            </div>
+                            <div class="image-selector__pos">
+                                <div class="image-selector__value">100 000</div>
+                                <div class="image-selector__key">ЦИКЛОВ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="tabs-images__menu-item">
-                Бионическая регулировка спинки
-            </div>
-            <div class="tabs-images__menu-item">
-                Мягка поддержка сиденья
+            <div class="image-selector__controls">
+                <div class="image-selector__counter">1/4</div>
+                <div class="image-selector__buttons">
+                    <svg class="image-selector__button image-selector__button_prev" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.7282 18.4239L23.5442 19.2188L19.2186 23.5598H30.7173V24.7011H19.2186L23.5442 29.0226L22.7282 29.8369L17.0216 24.1304L22.7282 18.4239Z"
+                            fill="CurrentColor"></path>
+                        <rect x="-0.5" y="0.5" width="41" height="41" rx="20.5" transform="matrix(-1 0 0 1 44 3)"
+                            stroke="CurrentColor"></rect>
+                        <rect x="-0.5" y="0.5" width="41" height="41" rx="20.5" transform="matrix(-1 0 0 1 44 3)"
+                            stroke="CurrentColor" stroke-opacity="0.2"></rect>
+                    </svg>
+                    <svg class="image-selector__button image-selector__button_next" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M25.2718 18.4239L24.4558 19.2188L28.7814 23.5598H17.2827V24.7011H28.7814L24.4558 29.0226L25.2718 29.8369L30.9784 24.1304L25.2718 18.4239Z"
+                            fill="CurrentColor"></path>
+                        <rect x="3.5" y="3.5" width="41" height="41" rx="20.5" stroke="CurrentColor"></rect>
+                        <rect x="3.5" y="3.5" width="41" height="41" rx="20.5" stroke="CurrentColor"
+                            stroke-opacity="0.2">
+                        </rect>
+                    </svg>
+                </div>
             </div>
         </div>
     </div>
-    <script src="./scripts/tabs-images.js"></script>
+    <script src="./scripts/image-selector.js"></script>
 </body>
 
 </html>
