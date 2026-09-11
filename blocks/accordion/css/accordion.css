@@ -55,6 +55,7 @@
 
 .accordion__item-content {
     max-height: 0;
+    margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px 0 0 0;
 

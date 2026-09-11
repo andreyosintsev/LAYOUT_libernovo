@@ -19,8 +19,16 @@
     opacity: 0;
 }
 
-.back-to-top:hover .back-to-top__icon path {
-    fill: var(--black-light, #3C3C3C);
+.back-to-top__icon path {
+    transition: fill 0.3s ease;
+}
+
+.back-to-top:hover .back-to-top__circle {
+    fill: #ffffff;
+}
+
+.back-to-top:hover .back-to-top__arrow {
+    fill: #000000;
 }
 
 .back-to-top__icon {
