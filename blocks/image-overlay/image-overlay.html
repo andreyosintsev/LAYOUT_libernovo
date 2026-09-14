@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Overlay Block</title>
+    <link rel="stylesheet" href="../../css/common/normalize.css">
+    <link rel="stylesheet" href="../../css/common/consts.css">
+    <link rel="stylesheet" href="../block-image/css/block-image.css">
+    <link rel="stylesheet" href="../wrapper/css/wrapper.css">
+    <link rel="stylesheet" href="css/image-overlay.css">
+</head>
+
+<body style="background-color: yellowgreen; padding: 10px;">
+    <div class="wrapper-2580">
+
+        <div class="image-overlay">
+            <div class="block-image image-overlay__image block-image_no-round">
+                <picture>
+                    <source srcset="images/01.webp" media="(min-width: 769px)">
+                    <source srcset="images/01_768.webp" media="(max-width: 768px)">
+                    <img class="block-image__image" src="images/01_768.webp"
+                        alt="Эргономичное офисное кресло Omni SE">
+                </picture>
+            </div>
+            <div class="image-overlay__content">
+                <div class="image-overlay__content-wrapper">
+                    <div class="image-overlay__super">
+                        LiberNovo Omni SE
+                    </div>
+                    <h3 class="image-overlay__title">Better Comfort, Simplified.</h3>
+                    <p class="image-overlay__text">Effortless support for the way you sit &mdash; every day.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

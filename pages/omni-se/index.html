@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="../../blocks/model-selector/css/model-selector.css">
     <link rel="stylesheet" href="../../blocks/form/css/form.css">
     <link rel="stylesheet" href="../../blocks/panel-single/css/panel-single.css">
+    <link rel="stylesheet" href="../../blocks/image-overlay/css/image-overlay.css">
     <link rel="stylesheet" href="../../blocks/video/css/video.css">
     <link rel="stylesheet" href="../../blocks/video-slider/css/video-slider.css">
     <link rel="stylesheet" href="../../blocks/hero-single/css/hero-single.css">
@@ -40,7 +41,7 @@
     <link rel="stylesheet" href="../../blocks/tab-dynamic/css/tab-dynamic.css">
     <link rel="stylesheet" href="../../blocks/tab-dynamic/css/tab-dynamic_flexfit.css">
     <link rel="stylesheet" href="../../blocks/tab-dynamic/css/tab-dynamic_support.css">
-    <link rel="stylesheet" href="../../blocks/tab-dynamic/css/tab-dynamic_Omni SEstretch.css">
+    <link rel="stylesheet" href="../../blocks/tab-dynamic/css/tab-dynamic_omnistretch.css">
     <link rel="stylesheet" href="../../blocks/tabs-images/css/tabs-images.css">
     <link rel="stylesheet" href="../../blocks/section-title/css/section-title.css">
     <link rel="stylesheet" href="../../blocks/block-image/css/block-image.css">
@@ -312,10 +313,12 @@
                                 <fieldset class="form__fieldset">
                                     <legend class="form__legend">Модель кресла</legend>
                                     <div class="form__radio-button">
-                                        <a class="form__label" href="../omni/" target="_self">LiberNovo Omni тёмно-серое</a>
+                                        <a class="form__label" href="../omni/" target="_self">LiberNovo Omni
+                                            тёмно-серое</a>
                                     </div>
                                     <div class="form__radio-button">
-                                        <a class="form__label" href="../omni/" target="_self">LiberNovo Omni светло-серое</a>
+                                        <a class="form__label" href="../omni/" target="_self">LiberNovo Omni
+                                            светло-серое</a>
                                     </div>
                                     <div class="form__radio-button">
                                         <input class="form__radio" type="radio" id="form__radio_se" name="switch"
@@ -349,9 +352,27 @@
                 </div>
             </div>
         </div>
-        <div class="segment segment_gray">
+        <div class="segment segment_preface segment_gray">
             <div class="wrapper-2580">
-
+                <div class="image-overlay">
+                    <div class="block-image image-overlay__image block-image_no-round">
+                        <picture>
+                            <source srcset="images/product/image-overlay/01.webp" media="(min-width: 769px)">
+                            <source srcset="images/product/image-overlay/01_768.webp" media="(max-width: 768px)">
+                            <img class="block-image__image" src="images/product/image-overlay/01_768.webp"
+                                alt="Эргономичное офисное кресло Omni SE">
+                        </picture>
+                    </div>
+                    <div class="image-overlay__content">
+                        <div class="image-overlay__content-wrapper">
+                            <div class="image-overlay__super">
+                                LiberNovo Omni SE
+                            </div>
+                            <h3 class="image-overlay__title">Better Comfort, Simplified.</h3>
+                            <p class="image-overlay__text">Effortless support for the way you sit &mdash; every day.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="segment">
@@ -567,9 +588,9 @@
                                         </div>
                                         <div class="grid-images__cell">
                                             <video class="video__player" autoplay playsinline muted loop>
-                                                <source src="images/product/tabs-dynamic/tab-Omni SEstretch/01.webm"
+                                                <source src="images/product/tabs-dynamic/tab-omnistretch/01.webm"
                                                     type="video/webm">
-                                                <source src="images/product/tabs-dynamic/tab-Omni SEstretch/01.mp4"
+                                                <source src="images/product/tabs-dynamic/tab-omnistretch/01.mp4"
                                                     type="video/mp4">
                                                 Ваш браузер не поддерживает видео
                                             </video>
@@ -585,7 +606,7 @@
                                                 долгой работы за столом.
                                             </div>
                                             <img class="grid-images__image grid-images__image_sizeplus"
-                                                src="images/product/tabs-dynamic/tab-Omni SEstretch/02.webp"
+                                                src="images/product/tabs-dynamic/tab-omnistretch/02.webp"
                                                 alt="Подставка для ног StepSync">
                                         </div>
                                     </div>
