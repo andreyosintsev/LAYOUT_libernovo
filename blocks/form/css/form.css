@@ -42,9 +42,11 @@
     margin: 0;
     padding: 12px;
 
+    color: var(--black, #000000);
     font-size: 13px;
 
     text-align: center;
+    text-decoration:none;
     line-height: 1.2;
 
     background-color: var(--white, #FFFFFF);
@@ -55,6 +57,10 @@
     box-shadow: 0 0 0 1px #868A89;
 
     cursor: pointer;
+}
+
+.form__label:visited, .form__label:hover {
+    color: var(--black, #000000);
 }
 
 .form__radio {
