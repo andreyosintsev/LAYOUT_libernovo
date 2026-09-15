@@ -7,9 +7,13 @@
     gap: 20px;
 }
 
+.grid-images_se {
+    gap: 8px;
+}
+
 .grid-images__block {
     display: grid;
-    grid-template-areas:"cell1 cell2" "cell1 cell3";
+    grid-template-areas: "cell1 cell2" "cell1 cell3";
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
@@ -17,9 +21,26 @@
 
 .grid-images__row {
     display: grid;
-    grid-template-areas:"cell4 cell5 cell6";
+    grid-template-areas: "cell4 cell5 cell6";
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+}
+
+.grid-images__row_se {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 8px;
+    height: 450px;
+}
+
+.grid-images__row_se-first {
+    grid-template-areas: "cell10 cell11";
+    grid-template-columns: 7fr 5fr;
+}
+
+.grid-images__row_se-second {
+    grid-template-areas: "cell20 cell21 cell22";
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-images__cell {
@@ -30,6 +51,71 @@
     overflow: hidden;
 
     border-radius: var(--border-radius-card, 14px);
+}
+
+.grid-images__cell_se {
+    border-radius: 24px;
+}
+
+.grid-images__cell_10 {
+    grid-area: cell10;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.grid-images__cell_11 {
+    grid-area: cell11;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.grid-images__cell_20 {
+    grid-area: cell20;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.grid-images__cell_21 {
+    grid-area: cell21;
+    border-radius: 0;
+}
+
+.grid-images__cell_22 {
+    grid-area: cell22;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.grid-images__cell_no-round {
+    border-radius: 0;
+}
+
+.grid-images__cell_topleft-round {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.grid-images__cell_topright-round {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.grid-images__cell_bottomleft-round {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.grid-images__cell_bottomright-round {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .grid-images__text {
@@ -46,6 +132,15 @@
     line-height: 1.2;
 }
 
+.grid-images__text_se {
+    top: auto;
+    bottom: 30px;
+    padding-bottom: 0;
+
+    font-size: 20px;
+    font-weight: var(--text-weight-semibold, 400);
+}
+
 .grid-images__text_white {
     color: var(--white, #FFFFFF);
 }
@@ -55,6 +150,12 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media screen and (max-width: 1440px) {
+    .grid-images__row_se {
+        height: 410px;
+    }
 }
 
 
@@ -71,12 +172,65 @@
         display: block;
     }
 
+    .grid-images__row_se {
+        height: auto;
+    }
+
     .grid-images__cell {
         margin-bottom: 14px;
+    }
+
+    .grid-images__cell_se {
+        height: 230px;
+        margin-bottom: 8px;
+    }
+
+    .grid-images__cell_10 {
+        grid-area: cell10;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 24px;
+    }
+
+    .grid-images__cell_11 {
+        grid-area: cell11;
+        border-radius: 0;
+    }
+
+    .grid-images__cell_20 {
+        grid-area: cell20;
+        border-radius: 0;
+    }
+
+    .grid-images__cell_21 {
+        grid-area: cell21;
+        border-radius: 0;
+    }
+
+    .grid-images__cell_22 {
+        grid-area: cell22;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 24px;
     }
 
     .grid-images__text {
         left: 20px;
         top: 20px;
+    }
+
+    .grid-images__text_se {
+        top: auto;
+        left: 30px;
+        bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .grid-images__text_se {
+        left: 20px;
+        bottom: 20px;
+
+        font-size: 16px;
     }
 }
