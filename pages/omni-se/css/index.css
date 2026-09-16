@@ -173,6 +173,10 @@ body {
     margin-bottom: 50px;
 }
 
+#overview-1 {
+    padding-top: 50px;
+}
+
 @media screen and (max-width: 1600px) {
     .main {
         padding-top: 70px;
