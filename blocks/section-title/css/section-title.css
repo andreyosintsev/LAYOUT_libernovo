@@ -37,6 +37,10 @@
     text-align: left !important;
 }
 
+.section-title__subtitle_orange {
+    color: var(--orange, #F76500);
+}
+
 @media (max-width: 1152px) {
     .section-title {
         font-size: 36px;
