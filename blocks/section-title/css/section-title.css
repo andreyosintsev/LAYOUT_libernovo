@@ -37,6 +37,10 @@
     text-align: left !important;
 }
 
+.section-title__subtitle_no-limit {
+    max-width: none;
+}
+
 .section-title__subtitle_orange {
     color: var(--orange, #F76500);
 }

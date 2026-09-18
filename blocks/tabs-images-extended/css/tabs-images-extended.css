@@ -1,0 +1,135 @@
+.tabs-images-extended {
+    position: relative;
+    max-width: 1280px;
+
+    font-family: var(--text-family-main, sans-serif);
+    font-size: var(--text-size-tabs, 16px);
+    font-weight: var(--text-weight-main, 300);
+}
+
+.tabs-images-extended__content {
+    display: grid;
+
+    margin-bottom: 32px;
+}
+
+.tabs-images-extended__image {
+    grid-area: 1/1;
+
+    width: 100%;
+    height: auto;
+
+    border-radius: 24px;
+
+    opacity: 0;
+
+    transition: opacity ease-in-out 0.3s;
+}
+
+.tabs-images-extended__image_active {
+    opacity: 1;
+}
+
+.tabs-images-extended__menu {
+    position: absolute;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+
+    bottom: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1056px;
+    margin: 0 auto;
+
+    font-size: 20px;
+
+    background-color: var(--white, #FFFFFF);
+    border-radius: 26px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scrollbar-width: none;
+
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+}
+
+.tabs-images-extended__menu::-webkit-scrollbar {
+    display: none;
+}
+
+.tabs-images-extended__menu-item {
+    padding: 10px 32px;
+
+    border-radius: 26px;
+
+    white-space: nowrap;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+    cursor: pointer;
+}
+
+.tabs-images-extended__menu-item_active {
+    color: var(--white, #FFFFFF);
+
+    background-color: var(--black, #000000);
+}
+
+.tabs-images-extended__description {
+    width: 100%;
+
+    font-size: 20px;
+
+    text-align: center;
+}
+
+.tabs-images-extended__description-item {
+    display: none;
+}
+
+.tabs-images-extended__description-item_active {
+    display: block;
+}
+
+@media screen and (max-width: 1024px) {
+    .tabs-images-extended__menu {
+        font-size: 18px;
+    }
+
+    .tabs-images-extended__description {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tabs-images-extended {
+        font-size: 14px;
+    }
+
+    .tabs-images-extended__content {
+        margin-bottom: 26px;
+    }
+
+    .tabs-images-extended__menu {
+        position: relative;
+        grid-auto-columns: auto;
+        bottom: auto;
+        margin-bottom: 26px;
+
+
+        border-radius: 24px;
+    }
+
+    .tabs-images-extended__menu-item {
+        padding: 10px;
+
+        text-align: center;
+
+        border-radius: 24px;
+    }
+}
