@@ -143,4 +143,8 @@
     .specifications__table {
         grid-template-columns: 1fr 1fr;
     }
+
+    .specifications__item {
+        padding: 0;
+    }
 }

@@ -88,6 +88,10 @@
     font-weight: var(--text-weight-semi-bold, 400);
 }
 
+.flex-images__title_large {
+    font-size: 24px;
+}
+
 .flex-images__text {
     margin: 0;
 
@@ -106,7 +110,7 @@
     .flex-images {
         flex-direction: column;
 
-        padding: 32px;
+        padding: 0;
     }
 
     .flex-images__item {
@@ -124,6 +128,10 @@
     }
 
     .flex-images_3 .flex-images__title {
+        font-size: 20px;
+    }
+
+    .flex-images__title_large {
         font-size: 20px;
     }
 }

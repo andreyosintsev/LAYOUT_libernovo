@@ -169,7 +169,11 @@ body {
     margin-bottom: 80px;
 }
 
-.section_durability  .section-title {
+.section_durability .section-title {
+    margin-bottom: 24px;
+}
+
+.section_durability .section-p {
     margin-bottom: 50px;
 }
 
